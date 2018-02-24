@@ -9,6 +9,8 @@ var reset = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
 
+
+
 easyBtn.addEventListener("click", function() {
   easyBtn.classList.add("selected");
   hardBtn.classList.remove("selected");
@@ -25,6 +27,8 @@ easyBtn.addEventListener("click", function() {
   }
 })
 
+
+
 hardBtn.addEventListener("click", function() {
   hardBtn.classList.add("selected");
   easyBtn.classList.remove("selected");
@@ -38,6 +42,8 @@ hardBtn.addEventListener("click", function() {
   }
 })
 
+
+
 reset.addEventListener("click", function() {
   colors = generateRandomColors(numOfSquares);
 
@@ -50,6 +56,8 @@ reset.addEventListener("click", function() {
   }
   h1.style.backgroundColor = "steelblue";
 })
+
+
 
 colorDisplay.textContent = pickedColor;
 
@@ -68,6 +76,8 @@ for(var i = 0; i < squares.length; i++) {
     }
   });
 }
+
+
 
 function changeColors(color) {
   for(var i =0; i < squares.length; i++) {
